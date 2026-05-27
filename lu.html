@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="ver()">Clique aqui para ver sua nota</button>
+    <p id="a"> </p>
+      </script>
+   <h4> sua nota.</h4>
+   <input type="number" id="nota" placeholder="Digite sua nota..">
+    <button onclick="poc()"> Verificar </button>
+    <p id="result"> Resultado</p>
+   <script>
+   function poc() {
+     let nota = document.getElementById("nota").value;
+     if(nota >= 6) {
+        document.getElementById("result").innerText = "Aprovado!";
+     } else {
+        document.getElementById("result").innerText = "Reprovado.";
+    }
+   }
+   </script>
+    
+</body>
+</html>
